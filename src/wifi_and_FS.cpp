@@ -1,3 +1,14 @@
+/**
+ * @file wifi_and_FS.cpp
+ * @author Yassine Hattay (Hattayyassine519@gmail.com)
+ * @brief Wifi and little fs related code
+ * @version 0.1
+ * @date 2025-03-02
+ * 
+ *
+ * 
+ */
+
 #include "wifi_and_FS.h"
 #include "server_m.h"
 
@@ -7,6 +18,14 @@ bool connected_wifi;
 unsigned long startTime = 0;           // Declare the startTime variable
 bool moreFiles;
 unsigned long lastTime2 = 0;
+
+
+
+/**
+ * @brief this load the photos from the sd card to the little fs 
+ *
+ * @param parameter
+ */
 
 bool loadFileToLittleFS(const String &sourcePath, const String &destPath)
 {
@@ -42,7 +61,11 @@ bool loadFileToLittleFS(const String &sourcePath, const String &destPath)
   return true;
 }
 
-
+/**
+ * @brief this function prints RAM and little fs usage 
+ *
+ * @param parameter
+ */
 
 void printMemoryAndFileSystemStats()
 {
@@ -61,6 +84,12 @@ void printMemoryAndFileSystemStats()
   Serial.printf("Free RAM: %u bytes\n", ESP.getFreeHeap());
 }
 
+/**
+ * @brief this function returns currently connected Acces point wifi channel
+ *
+ * @param parameter
+ */
+
 uint8_t getWiFiChannel(const char *ssid)
 {
   if (uint8_t n = WiFi.scanNetworks())
@@ -75,6 +104,12 @@ uint8_t getWiFiChannel(const char *ssid)
   }
   return 0;
 }
+
+/**
+ * @brief this function connects to wifi
+ *
+ * @param parameter
+ */
 
 bool connectToWiFi(const char *ssid, const char *password, unsigned long timeout)
 {

@@ -1,0 +1,79 @@
+\doxysection{C\+:/\+Users/hatta/\+Documents/\+Platform\+IO/\+Projects/testing/include/esp\+\_\+now\+\_\+m.h File Reference}
+\hypertarget{esp__now__m_8h}{}\label{esp__now__m_8h}\index{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/esp\_now\_m.h@{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/esp\_now\_m.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{esp__now__m_8h_a6b20d41d6252e9871430c242cb1a56e7}\label{esp__now__m_8h_a6b20d41d6252e9871430c242cb1a56e7} 
+\#define {\bfseries BUFFER\+\_\+\+SIZE}~4096
+\item 
+\Hypertarget{esp__now__m_8h_a6ffaaae9cbfb91f056627a0bef5dbb5a}\label{esp__now__m_8h_a6ffaaae9cbfb91f056627a0bef5dbb5a} 
+\#define {\bfseries ESPNOW\+\_\+\+CHANNEL}~13
+\begin{DoxyCompactList}\small\item\em this sets the wifi channel that will be used by esp now . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{esp__now__m_8h_a948c8ec82b75a1524548ec7f072cd89f}{On\+Data\+Recv}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}mac\+\_\+addr, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint8\+\_\+t data\+\_\+len)
+\begin{DoxyCompactList}\small\item\em this function excutes when data is recived and saves it to SD card . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{esp__now__m_8h_aeaecae33307e47175167dc3d00b13c54}{Init\+ESPNow}} ()
+\begin{DoxyCompactList}\small\item\em this initializes esp now \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{esp__now__m_8h_a7af15183f43699e2f6c2db927debcd74}\label{esp__now__m_8h_a7af15183f43699e2f6c2db927debcd74} 
+uint16\+\_\+t {\bfseries current\+Transmit\+Current\+Position}
+\item 
+\Hypertarget{esp__now__m_8h_a7fd71d705b454b96b5291ef27f1b4834}\label{esp__now__m_8h_a7fd71d705b454b96b5291ef27f1b4834} 
+uint16\+\_\+t {\bfseries current\+Transmit\+Total\+Packages}
+\item 
+\Hypertarget{esp__now__m_8h_acff00abb58225f4748aee8fc70a3512d}\label{esp__now__m_8h_acff00abb58225f4748aee8fc70a3512d} 
+bool {\bfseries file\+Receiving\+Started}
+\item 
+\Hypertarget{esp__now__m_8h_abaaa5dc701b2f56df8b0854bcb79aed3}\label{esp__now__m_8h_abaaa5dc701b2f56df8b0854bcb79aed3} 
+bool {\bfseries file\+Transmission\+Complete}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Hattay Yassine (\href{mailto:hattayyassine519@gmail.com}{\texttt{ hattayyassine519@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/03 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{esp__now__m_8h_aeaecae33307e47175167dc3d00b13c54}\index{esp\_now\_m.h@{esp\_now\_m.h}!InitESPNow@{InitESPNow}}
+\index{InitESPNow@{InitESPNow}!esp\_now\_m.h@{esp\_now\_m.h}}
+\doxysubsubsection{\texorpdfstring{InitESPNow()}{InitESPNow()}}
+{\footnotesize\ttfamily \label{esp__now__m_8h_aeaecae33307e47175167dc3d00b13c54} 
+void Init\+ESPNow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+this initializes esp now 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{esp__now__m_8h_a948c8ec82b75a1524548ec7f072cd89f}\index{esp\_now\_m.h@{esp\_now\_m.h}!OnDataRecv@{OnDataRecv}}
+\index{OnDataRecv@{OnDataRecv}!esp\_now\_m.h@{esp\_now\_m.h}}
+\doxysubsubsection{\texorpdfstring{OnDataRecv()}{OnDataRecv()}}
+{\footnotesize\ttfamily \label{esp__now__m_8h_a948c8ec82b75a1524548ec7f072cd89f} 
+void On\+Data\+Recv (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{mac\+\_\+addr}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{uint8\+\_\+t}]{data\+\_\+len}{}\end{DoxyParamCaption})}
+
+
+
+this function excutes when data is recived and saves it to SD card . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}

@@ -1,3 +1,14 @@
+/**
+ * @file main.cpp
+ * @author Hattay Yassine (hattayyassine519@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-03-03
+ * 
+ *
+ * 
+ */
+
 #include "wifi_and_FS.h"
 #include "esp_now_m.h"
 #include "server_m.h"
@@ -9,7 +20,7 @@ const char ssid[] = "Orange-066C";
 const char password[] = "GMA6ABLMG87";
 
 // NTP settings
-NTPClient timeClient(udp, "pool.ntp.org", 3600, 3600000); // Offset: UTC+1 (3600 seconds)
+NTPClient timeClient(udp, "pool.ntp.org", 3600, 3600000); 
 
 void setup()
 {

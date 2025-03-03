@@ -1,9 +1,26 @@
+/**
+ * @file server_m.cpp
+ * @author Yassine Hattay (Hattayyassine519@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-03-02
+ * 
+ * 
+ * 
+ */
+
 #include "server_m.h"
 #include "wifi_and_FS.h"
 #include "esp_now_m.h"
 
 char date[13] = "";
 bool end_server_b = false;
+
+/**
+ * @brief this function is called when you click one of the dates links in the root of the server
+ *
+ * @param parameter
+ */
 
 void handleDatePhotos(AsyncWebServerRequest *request)
 {
@@ -206,7 +223,11 @@ void handleDatePhotos(AsyncWebServerRequest *request)
   printMemoryAndFileSystemStats();
 }
 
-
+/**
+ * @brief this function is called when you visit the root of the server
+ *
+ * @param parameter
+ */
 
 void handleHome(AsyncWebServerRequest *request)
 {
@@ -365,6 +386,11 @@ void handleHome(AsyncWebServerRequest *request)
 }
 
 
+/**
+ * @brief this function is called when you click end server in the root of the server
+ *
+ * @param parameter
+ */
 
 void server_end(AsyncWebServerRequest *request)
 {
@@ -390,6 +416,12 @@ void server_end(AsyncWebServerRequest *request)
 
   end_server_b = true;
 }
+
+/**
+ * @brief this function setups the server .  
+ *
+ * @param parameter
+ */
 
 void setup_server()
 {

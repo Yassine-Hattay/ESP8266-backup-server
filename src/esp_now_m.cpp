@@ -1,3 +1,14 @@
+/**
+ * @file esp_now_m.cpp
+ * @author Hattay Yassine (hattayyassine519@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-03-03
+ * 
+ *
+ * 
+ */
+
 #include "esp_now_m.h"
 #include "wifi_and_FS.h"
 
@@ -9,7 +20,13 @@ File dir;
 File file;
 File root;
 FSInfo fs_info;
-// Initialize ESP-NOW
+
+/**
+ * @brief this initializes esp now 
+ *
+ * @param parameter
+ */
+
 void InitESPNow()
 {
     if (esp_now_init() == 0)
@@ -22,6 +39,12 @@ void InitESPNow()
         ESP.restart();
     }
 }
+
+/**
+ * @brief this function excutes when data is recived and saves it to SD card . 
+ *
+ * @param parameter
+ */
 
 void OnDataRecv(uint8_t *mac_addr, uint8_t *data, uint8_t data_len)
 {

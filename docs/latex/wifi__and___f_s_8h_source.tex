@@ -1,0 +1,34 @@
+\doxysection{wifi\+\_\+and\+\_\+\+FS.\+h}
+\hypertarget{wifi__and___f_s_8h_source}{}\label{wifi__and___f_s_8h_source}\index{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/wifi\_and\_FS.h@{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/wifi\_and\_FS.h}}
+\mbox{\hyperlink{wifi__and___f_s_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ WIFI\_AND\_FS\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ WIFI\_AND\_FS\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <ESP8266WiFi.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <WiFiUdp.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <SD.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}LittleFS.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <NTPClient.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <TimeLib.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <espnow.h>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ File\ dir;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ File\ file;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{extern}\ File\ root;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{extern}\ FSInfo\ fs\_info;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ connected\_wifi;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ startTime\ ;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ moreFiles;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ lastTime2\ ;}
+\DoxyCodeLine{00031\ \textcolor{keyword}{extern}\ WiFiUDP\ udp;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{wifi__and___f_s_8h_a34371614dc03d227fc24ce3aed0a276e}{connectToWiFi}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ssid,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *password,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ timeout);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{wifi__and___f_s_8h_a6f707ee31f4790b79a7c5af3dc2a7a29}{printMemoryAndFileSystemStats}}();}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{wifi__and___f_s_8h_a58b4bb23a4499449ef870f71ea73775a}{loadFileToLittleFS}}(\textcolor{keyword}{const}\ String\ \&sourcePath,\ \textcolor{keyword}{const}\ String\ \&destPath);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

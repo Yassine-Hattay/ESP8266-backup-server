@@ -1,0 +1,26 @@
+\doxysection{esp\+\_\+now\+\_\+m.\+h}
+\hypertarget{esp__now__m_8h_source}{}\label{esp__now__m_8h_source}\index{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/esp\_now\_m.h@{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/esp\_now\_m.h}}
+\mbox{\hyperlink{esp__now__m_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ ESP\_NOW\_M\_H\ \ \ }\textcolor{comment}{//\ Check\ if\ the\ macro\ is\ not\ defined}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ESP\_NOW\_M\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ BUFFER\_SIZE\ 4096}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ ESPNOW\_CHANNEL\ 13}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{extern}\ uint16\_t\ currentTransmitCurrentPosition;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{extern}\ uint16\_t\ currentTransmitTotalPackages\ ;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ fileReceivingStarted\ ;\ \ \ \ \ \textcolor{comment}{//\ Flag\ to\ check\ if\ receiving\ has\ started}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ fileTransmissionComplete\ ;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{esp__now__m_8h_a948c8ec82b75a1524548ec7f072cd89f}{OnDataRecv}}(uint8\_t\ *mac\_addr,\ uint8\_t\ *data,\ uint8\_t\ data\_len);}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{esp__now__m_8h_aeaecae33307e47175167dc3d00b13c54}{InitESPNow}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ End\ of\ include\ guard}}
+
+\end{DoxyCode}

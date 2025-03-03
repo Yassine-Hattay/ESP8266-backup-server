@@ -1,0 +1,108 @@
+\doxysection{C\+:/\+Users/hatta/\+Documents/\+Platform\+IO/\+Projects/testing/include/wifi\+\_\+and\+\_\+\+FS.h File Reference}
+\hypertarget{wifi__and___f_s_8h}{}\label{wifi__and___f_s_8h}\index{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/wifi\_and\_FS.h@{C:/Users/hatta/Documents/PlatformIO/Projects/testing/include/wifi\_and\_FS.h}}
+{\ttfamily \#include $<$ESP8266\+Wi\+Fi.\+h$>$}\newline
+{\ttfamily \#include $<$Wi\+Fi\+Udp.\+h$>$}\newline
+{\ttfamily \#include $<$SD.\+h$>$}\newline
+{\ttfamily \#include "{}Little\+FS.\+h"{}}\newline
+{\ttfamily \#include $<$NTPClient.\+h$>$}\newline
+{\ttfamily \#include $<$Time\+Lib.\+h$>$}\newline
+{\ttfamily \#include $<$espnow.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{wifi__and___f_s_8h_a34371614dc03d227fc24ce3aed0a276e}{connect\+To\+Wi\+Fi}} (const char \texorpdfstring{$\ast$}{*}ssid, const char \texorpdfstring{$\ast$}{*}password, unsigned long timeout)
+\begin{DoxyCompactList}\small\item\em this function connects to wifi \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{wifi__and___f_s_8h_a6f707ee31f4790b79a7c5af3dc2a7a29}{print\+Memory\+And\+File\+System\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em this function prints RAM and little fs usage \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{wifi__and___f_s_8h_a58b4bb23a4499449ef870f71ea73775a}{load\+File\+To\+Little\+FS}} (const String \&source\+Path, const String \&dest\+Path)
+\begin{DoxyCompactList}\small\item\em this load the photos from the sd card to the little fs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a367402974cd7d77a72a727f287d24a8b}\label{wifi__and___f_s_8h_a367402974cd7d77a72a727f287d24a8b} 
+File {\bfseries dir}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a5eea5bedc36e0a29487dac7dd5725035}\label{wifi__and___f_s_8h_a5eea5bedc36e0a29487dac7dd5725035} 
+File {\bfseries file}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a1859aa3abeb9f54662bf4e5963224ee7}\label{wifi__and___f_s_8h_a1859aa3abeb9f54662bf4e5963224ee7} 
+File {\bfseries root}
+\item 
+\Hypertarget{wifi__and___f_s_8h_af6b9e0f4e2cc427e4fe4b67a8692437d}\label{wifi__and___f_s_8h_af6b9e0f4e2cc427e4fe4b67a8692437d} 
+FSInfo {\bfseries fs\+\_\+info}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a9bec7a31aa10e6597af19b6369b52f36}\label{wifi__and___f_s_8h_a9bec7a31aa10e6597af19b6369b52f36} 
+bool {\bfseries connected\+\_\+wifi}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a0e06ecdad9f318fafbb0b28370c3cfef}\label{wifi__and___f_s_8h_a0e06ecdad9f318fafbb0b28370c3cfef} 
+unsigned long {\bfseries start\+Time}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a69627c35af11bd4021749f48a54abe00}\label{wifi__and___f_s_8h_a69627c35af11bd4021749f48a54abe00} 
+bool {\bfseries more\+Files}
+\item 
+\Hypertarget{wifi__and___f_s_8h_af509db0898256fe11d2e778b30725fc6}\label{wifi__and___f_s_8h_af509db0898256fe11d2e778b30725fc6} 
+unsigned long {\bfseries last\+Time2}
+\item 
+\Hypertarget{wifi__and___f_s_8h_a46b48e04b347d8c6d55433b1f1dcc5b1}\label{wifi__and___f_s_8h_a46b48e04b347d8c6d55433b1f1dcc5b1} 
+Wi\+Fi\+UDP {\bfseries udp}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Hattay Yassine (\href{mailto:hattayyassine519@gmail.com}{\texttt{ hattayyassine519@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/03 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{wifi__and___f_s_8h_a34371614dc03d227fc24ce3aed0a276e}\index{wifi\_and\_FS.h@{wifi\_and\_FS.h}!connectToWiFi@{connectToWiFi}}
+\index{connectToWiFi@{connectToWiFi}!wifi\_and\_FS.h@{wifi\_and\_FS.h}}
+\doxysubsubsection{\texorpdfstring{connectToWiFi()}{connectToWiFi()}}
+{\footnotesize\ttfamily \label{wifi__and___f_s_8h_a34371614dc03d227fc24ce3aed0a276e} 
+bool connect\+To\+Wi\+Fi (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ssid}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{password}{, }\item[{unsigned long}]{timeout}{}\end{DoxyParamCaption})}
+
+
+
+this function connects to wifi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{wifi__and___f_s_8h_a58b4bb23a4499449ef870f71ea73775a}\index{wifi\_and\_FS.h@{wifi\_and\_FS.h}!loadFileToLittleFS@{loadFileToLittleFS}}
+\index{loadFileToLittleFS@{loadFileToLittleFS}!wifi\_and\_FS.h@{wifi\_and\_FS.h}}
+\doxysubsubsection{\texorpdfstring{loadFileToLittleFS()}{loadFileToLittleFS()}}
+{\footnotesize\ttfamily \label{wifi__and___f_s_8h_a58b4bb23a4499449ef870f71ea73775a} 
+bool load\+File\+To\+Little\+FS (\begin{DoxyParamCaption}\item[{const String \&}]{source\+Path}{, }\item[{const String \&}]{dest\+Path}{}\end{DoxyParamCaption})}
+
+
+
+this load the photos from the sd card to the little fs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{wifi__and___f_s_8h_a6f707ee31f4790b79a7c5af3dc2a7a29}\index{wifi\_and\_FS.h@{wifi\_and\_FS.h}!printMemoryAndFileSystemStats@{printMemoryAndFileSystemStats}}
+\index{printMemoryAndFileSystemStats@{printMemoryAndFileSystemStats}!wifi\_and\_FS.h@{wifi\_and\_FS.h}}
+\doxysubsubsection{\texorpdfstring{printMemoryAndFileSystemStats()}{printMemoryAndFileSystemStats()}}
+{\footnotesize\ttfamily \label{wifi__and___f_s_8h_a6f707ee31f4790b79a7c5af3dc2a7a29} 
+void print\+Memory\+And\+File\+System\+Stats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+this function prints RAM and little fs usage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}

@@ -1,3 +1,14 @@
+/**
+ * @file wifi_and_FS.h
+ * @author Hattay Yassine (hattayyassine519@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-03-03
+ * 
+ * 
+ * 
+ */
+
 #ifndef WIFI_AND_FS_H
 #define WIFI_AND_FS_H
 

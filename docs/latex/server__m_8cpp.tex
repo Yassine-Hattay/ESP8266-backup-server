@@ -1,0 +1,100 @@
+\doxysection{C\+:/\+Users/hatta/\+Documents/\+Platform\+IO/\+Projects/testing/src/server\+\_\+m.cpp File Reference}
+\hypertarget{server__m_8cpp}{}\label{server__m_8cpp}\index{C:/Users/hatta/Documents/PlatformIO/Projects/testing/src/server\_m.cpp@{C:/Users/hatta/Documents/PlatformIO/Projects/testing/src/server\_m.cpp}}
+{\ttfamily \#include "{}server\+\_\+m.\+h"{}}\newline
+{\ttfamily \#include "{}wifi\+\_\+and\+\_\+\+FS.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+now\+\_\+m.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{server__m_8cpp_a4b40c67da47f9ec80e15212f1cb44ea0}{handle\+Date\+Photos}} (Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}request)
+\begin{DoxyCompactList}\small\item\em this function is called when you click one of the dates links in the root of the server \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server__m_8cpp_aba0ba58935ae45b9d0aeae95e8581a0e}{handle\+Home}} (Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}request)
+\begin{DoxyCompactList}\small\item\em this function is called when you visit the root of the server \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server__m_8cpp_a62737292a8fe36ad808005b81d54e7cb}{server\+\_\+end}} (Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}request)
+\begin{DoxyCompactList}\small\item\em this function is called when you click end server in the root of the server \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server__m_8cpp_a2081dd4d0c9345635697c82e47659c6a}{setup\+\_\+server}} ()
+\begin{DoxyCompactList}\small\item\em this function setups the server . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{server__m_8cpp_a6884eac501df3f0aa53974eb39f1c71a}\label{server__m_8cpp_a6884eac501df3f0aa53974eb39f1c71a} 
+char {\bfseries date} \mbox{[}13\mbox{]} = "{}"{}
+\item 
+\Hypertarget{server__m_8cpp_afa31c716218e09ccd0e1dc710854aca7}\label{server__m_8cpp_afa31c716218e09ccd0e1dc710854aca7} 
+bool {\bfseries end\+\_\+server\+\_\+b} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Yassine Hattay (\href{mailto:Hattayyassine519@gmail.com}{\texttt{ Hattayyassine519@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/02 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{server__m_8cpp_a4b40c67da47f9ec80e15212f1cb44ea0}\index{server\_m.cpp@{server\_m.cpp}!handleDatePhotos@{handleDatePhotos}}
+\index{handleDatePhotos@{handleDatePhotos}!server\_m.cpp@{server\_m.cpp}}
+\doxysubsubsection{\texorpdfstring{handleDatePhotos()}{handleDatePhotos()}}
+{\footnotesize\ttfamily \label{server__m_8cpp_a4b40c67da47f9ec80e15212f1cb44ea0} 
+void handle\+Date\+Photos (\begin{DoxyParamCaption}\item[{Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}}]{request}{}\end{DoxyParamCaption})}
+
+
+
+this function is called when you click one of the dates links in the root of the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server__m_8cpp_aba0ba58935ae45b9d0aeae95e8581a0e}\index{server\_m.cpp@{server\_m.cpp}!handleHome@{handleHome}}
+\index{handleHome@{handleHome}!server\_m.cpp@{server\_m.cpp}}
+\doxysubsubsection{\texorpdfstring{handleHome()}{handleHome()}}
+{\footnotesize\ttfamily \label{server__m_8cpp_aba0ba58935ae45b9d0aeae95e8581a0e} 
+void handle\+Home (\begin{DoxyParamCaption}\item[{Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}}]{request}{}\end{DoxyParamCaption})}
+
+
+
+this function is called when you visit the root of the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server__m_8cpp_a62737292a8fe36ad808005b81d54e7cb}\index{server\_m.cpp@{server\_m.cpp}!server\_end@{server\_end}}
+\index{server\_end@{server\_end}!server\_m.cpp@{server\_m.cpp}}
+\doxysubsubsection{\texorpdfstring{server\_end()}{server\_end()}}
+{\footnotesize\ttfamily \label{server__m_8cpp_a62737292a8fe36ad808005b81d54e7cb} 
+void server\+\_\+end (\begin{DoxyParamCaption}\item[{Async\+Web\+Server\+Request \texorpdfstring{$\ast$}{*}}]{request}{}\end{DoxyParamCaption})}
+
+
+
+this function is called when you click end server in the root of the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server__m_8cpp_a2081dd4d0c9345635697c82e47659c6a}\index{server\_m.cpp@{server\_m.cpp}!setup\_server@{setup\_server}}
+\index{setup\_server@{setup\_server}!server\_m.cpp@{server\_m.cpp}}
+\doxysubsubsection{\texorpdfstring{setup\_server()}{setup\_server()}}
+{\footnotesize\ttfamily \label{server__m_8cpp_a2081dd4d0c9345635697c82e47659c6a} 
+void setup\+\_\+server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+this function setups the server . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
